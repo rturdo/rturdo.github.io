@@ -1,0 +1,146 @@
+.body-class {
+    background-color: #f4f4f9;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header-class {
+    background-color: #2c3e50;
+    color: #f4f4f9;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.nav-class {
+    background-color: rgb(78, 78, 78);
+    height: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-link-class {
+    background-color: rgb(78, 78, 78);
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    padding: 5px 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid white; 
+    border-radius: 5px;
+}
+
+.nav-link-class.active {
+    font-weight: bold;
+}
+
+.title-class {
+    color: #ececec;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.section-title-class {
+    color: #3498db;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.image-class{
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.form-class input, .form-class textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.button-class {
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.button-class:hover {
+    background-color: #218c53;
+}
+
+.footer-class {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768){
+    .header-class {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .nav-class {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link-class {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero-section-class img {
+        max-width: 90%;
+    }
+
+    .section-title-class {
+        font-size: 1.5rem;
+    }
+
+    .blockquote-class {
+        width: 95%;
+    }
+
+    .form-class {
+        width: 90%;
+    }
+
+    .button-class {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-class {
+        font-size: 1.2rem;
+    }
+
+    .section-title-class {
+        font-size: 1.3rem;
+    }
+
+    .text-class {
+        font-size: 0.9rem;
+    }
+
+    .button-class {
+        font-size: 0.9rem;
+    }
+
+    .faq-class {
+        padding: 10px;
+    }
+}
