@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Charity Profile - Help Hub</title>
+</head>
+<body>
+
+  <header>
+    Help Hub
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="charities.html">Charities</a>
+  </nav>
+
+  <div class="charity-name">
+    Charity: Water
+  </div>
+
+  <div class="container">
+    <div class="description">
+      <p>
+        Charity: Water is a non-profit organization that is dedicated to bringing clean and safe drinking water to people in developing countries.
+      </p>
+    </div>
+
+    <button id="volunteerBtn">Volunteer Now</button>
+
+    <div class="volunteer-form">
+      <h3>Volunteer With Us</h3>
+      <form id="volunteerForm" action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="message">Why do you want to volunteer?</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="confirmationMessage" style="display: none; color: green; margin-top: 10px;"></div>
+    </div>
+  </div>
+  <script src="charity_profile.js"></script>
+</body>
+</html>

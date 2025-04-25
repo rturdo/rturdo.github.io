@@ -1,27 +1,34 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>HelpHub</title>
 </head>
-
-
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact Me</a>
-    </nav>
 
-    <header>
-       <h1>Welcome</h1>
-    </header>
+  <header>
+    Help Hub
+  </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="charities.html">Charities</a>
+  </nav>
+
+  <div class="content">
     <p>
-       On this web page you can find out more about me. Navigate to the about page to learn more about my personal life. 
-       On the resume page you can find my professional resume. The contact page will allow you to send me a message!
+      Welcome to HelpHub! Here you can discover various charities and apply to volunteer for them. You can sign up to our newsletter to stay up to date with the organization!
     </p>
-</body>
+    <h2>Subscribe to Our Newsletter</h2>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/ryanturdo" 
+          method="post" 
+          target="popupwindow" 
+          onsubmit="window.open('https://buttondown.email/your_username', 'popupwindow')" 
+          class="embeddable-buttondown-form">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
 
+</body>
 </html>

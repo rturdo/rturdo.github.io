@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buttondown API Example</title>
+</head>
+<body>
+  <h1>Buttondown Subscribers</h1>
+  <ul id="subscriberList"></ul>
+
+  <script>
+    const apiKey = '57de03a4-63f1-4526-9d96-aa756a708b12';
+
+    fetch('https://api.buttondown.email/v1/subscribers', {
+      method: 'GET',
+      headers: {
+        'Authorization': `Token ${apiKey}`,
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        const list = document.getElementById('subscriberList');
+        data.results.forEach(subscriber => {
+          const listItem = document.createElement('li');
+          listItem.textContent = subscriber.email;
+          list.appendChild(listItem);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  </script>
+</body>
+</html>
